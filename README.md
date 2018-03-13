@@ -1,6 +1,6 @@
 # Sample-level CNN Architectures for Music Auto-tagging Using Raw Waveforms
 ***A [TensorFlow][1]+[Keras][12] implementation of ["Sample-level CNN Architectures for 
-Music Auto-tagging Using Raw Waveforms"][10]***
+Music Auto-tagging Using Raw Waveforms"][10] including [Jupyter note][16] for excitation analysis***
 
 ![Excitations of the first SE block](img/first_se_excitations.svg)
 
@@ -11,6 +11,7 @@ Music Auto-tagging Using Raw Waveforms"][10]***
 * [Training a model from scratch](#training)
 * [Downloading pre-trained models](#download)
 * [Evaluating a model](#evaluating)
+* ***[Excitation Analysis](#excitation)***
 
 ### Citation
 ```
@@ -231,6 +232,28 @@ python eval.py se-multi-auc_0.9111-tfrmodel.hdf5
 ```
 
 
+<a name="excitation"></a>
+## Excitation Analysis
+* If you just want to see codes and plots, please open [`excitation_analysis.ipynb`][16].
+* If you want to analyze excitations by yourself, please follow next steps.
+
+#### 1. Extracting excitations.
+```bash
+python extract_excitations.py <MODEL_PATH>
+
+# For example, to extract excitations from the downloaded `SE+multi` model:
+python extract_excitations.py se-multi-auc_0.9111-tfrmodel.hdf5
+```
+This will extract excitations from the model and save them as a Pandas DataFrame.
+The saved file name is `excitations.pkl` by default.
+
+#### 2. Analyze the extracted excitations.
+Run Jupyter notebook:
+```bash
+jupyter notebook
+```
+And open the note `excitation_analysis.ipynb` in Jupyter notebook.
+Run and explore excitations by yourself.
 
 
 
@@ -249,3 +272,4 @@ python eval.py se-multi-auc_0.9111-tfrmodel.hdf5
 [13]: https://www.dropbox.com/s/r8qlxbol2p4ods5/se-multi-auc_0.9111-tfrmodel.hdf5?dl=1
 [14]: https://www.dropbox.com/s/fr3y1o3hyha0n2m/rese-multi-auc_0.9113-tfrmodel.hdf5?dl=1
 [15]: https://matplotlib.org/
+[16]: https://github.com/tae-jun/resemul/blob/master/excitation_analysis.ipynb
