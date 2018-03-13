@@ -12,6 +12,7 @@ Music Auto-tagging Using Raw Waveforms"][10] including [Jupyter note][16] for ex
 * [Downloading pre-trained models](#download)
 * [Evaluating a model](#evaluating)
 * ***[Excitation Analysis](#excitation)***
+* [Issues & Questions](#issue)
 
 ### Citation
 ```
@@ -256,6 +257,10 @@ And open the note `excitation_analysis.ipynb` in Jupyter notebook.
 Run and explore excitations by yourself.
 
 
+<a name="issue"></a>
+## Issues & Questions
+If you have any issues or questions, please post it on [issues][17] so that other people can share it :) Thanks!
+
 
 [1]: https://www.tensorflow.org/
 [2]: http://pandas.pydata.org/
@@ -273,3 +278,4 @@ Run and explore excitations by yourself.
 [14]: https://www.dropbox.com/s/fr3y1o3hyha0n2m/rese-multi-auc_0.9113-tfrmodel.hdf5?dl=1
 [15]: https://matplotlib.org/
 [16]: https://github.com/tae-jun/resemul/blob/master/excitation_analysis.ipynb
+[17]: https://github.com/tae-jun/resemul/issues
