@@ -2,6 +2,16 @@
 ***A [TensorFlow][1]+[Keras][12] implementation of ["Sample-level CNN Architectures for 
 Music Auto-tagging Using Raw Waveforms"][10]***
 
+![Excitations of the first SE block](img/first_se_excitations.svg)
+
+### Table of contents
+* [Prerequisites](#prerequisites)
+* [Preparing MagnaTagATune (MTT) Dataset](#preparing-mtt)
+* [Preprocessing the MTT dataset](#preprocessing)
+* [Training a model from scratch](#training)
+* [Downloading pre-trained models](#download)
+* [Evaluating a model](#evaluating)
+
 ### Citation
 ```
 @inproceedings{kim2018sample,
@@ -42,12 +52,13 @@ installed after installing packages in `requirements.txt`.
 This will install the required packages:
 * [keras][12] must use `v2.0.5` (has an [issue](https://github.com/keras-team/keras/issues/8430))
 * [tensorflow][1]
+* [numpy][5]
 * [pandas][2]
 * [scikit-learn][3]
 * [madmom][4]
-* [numpy][5]
-* [scipy][6]
-* [cython][7]
+* [scipy][6] (madmom dependency)
+* [cython][7] (madmom dependency)
+* [matplotlib][15] (used for excitation analysis)
 
 ### Installing ffmpeg
 `ffmpeg` is required for `madmom`.
@@ -247,5 +258,6 @@ python eval.py se-multi-auc_0.9111-tfrmodel.hdf5
 [10]: https://arxiv.org/abs/1710.10451
 [11]: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim
 [12]: https://keras.io/
-[13]: https://www.dropbox.com/s/r8qlxbol2p4ods5/se-multi-auc_0.9111-tfrmodel.hdf5?dl=1 
+[13]: https://www.dropbox.com/s/r8qlxbol2p4ods5/se-multi-auc_0.9111-tfrmodel.hdf5?dl=1
 [14]: https://www.dropbox.com/s/fr3y1o3hyha0n2m/rese-multi-auc_0.9113-tfrmodel.hdf5?dl=1
+[15]: https://matplotlib.org/
