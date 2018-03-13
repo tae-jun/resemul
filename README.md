@@ -23,18 +23,6 @@ Music Auto-tagging Using Raw Waveforms"][10]***
 }
 ```
 
-### Table of contents
-* [Prerequisites](#prerequisites)
-* [Preparing MagnaTagATune (MTT) Dataset](#preparing-mtt)
-* [Preprocessing the MTT dataset](#preprocessing)
-* [Training a model from scratch](#training)
-* [Downloading pre-trained models](#download)
-* [Evaluating a model](#evaluating)
-
-### TODO
-- [ ] Excitation extraction script
-- [ ] Excitation analysis notebook
-
 
 <a name="prerequisites"></a>
 ## Prerequisites
