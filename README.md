@@ -2,7 +2,9 @@
 ***A [TensorFlow][1]+[Keras][12] implementation of ["Sample-level CNN Architectures for 
 Music Auto-tagging Using Raw Waveforms"][10] including [Jupyter note][16] for excitation analysis***
 
-![Excitations of the first SE block](img/first_se_excitations.svg)
+
+### [ICASSP 2018 Poster](assets/icassp2018poster.pdf)
+![icassp2018poster-small](assets/icassp2018poster-small.jpg)
 
 ### Table of contents
 * [Prerequisites](#prerequisites)
