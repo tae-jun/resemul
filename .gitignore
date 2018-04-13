@@ -1,6 +1,5 @@
 dataset
 log
-*.pdf
 *.pkl
 *.hdf5
 
@@ -193,4 +192,3 @@ Temporary Items
 pyvenv.cfg
 .venv
 pip-selfcheck.json
-
